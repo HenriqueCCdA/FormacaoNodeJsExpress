@@ -16,15 +16,4 @@ app.use(express.json());
 routes(app);
 
 
-app.delete('/livros/:id', (req, res) => {
-    let {id} = req.params;
-    let index = buscaLivro(id);
-    livros.splice(index, 1)
-    res.send(`Livro ${id} removido com sucesso`);
-})
-
-function buscaLivro(id) {
-    return livros.findIndex(livro => livro.id == id);
-}
-
 export default app;
