@@ -1,0 +1,14 @@
+services:
+
+  db:
+    container_name: ORM_Sequelize_alura
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db/.MySql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "alura"
+      MYSQL_DATABASE: "nodejs"
+    ports:
+      - 3306:3306
