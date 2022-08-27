@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class Niveis extends Model {
     static associate(models) {
       Niveis.hasMany(models.Turmas, {
-        foreignkey: 'nivel_id'
+        foreignKey: 'nivel_id'
       });
     }
   }
