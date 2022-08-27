@@ -3,4 +3,4 @@
 Criando APIs REST em Node com Express.
 
 Curso de Node.js: API Rest com Express e MongoDB: Inicio: 25/07/2022 - Fim: 29/07/2022
-Curso de ORM com NodeJS: API com Sequelize e MySQL: Inicio: 24/08/2022 - Fim: --/--/2022
+Curso de ORM com NodeJS: API com Sequelize e MySQL: Inicio: 24/08/2022 - Fim: 27/08/2022
