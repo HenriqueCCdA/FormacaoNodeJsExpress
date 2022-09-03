@@ -33,6 +33,11 @@ class Services {
     async apagaRegistro(id) {
 
     }
+
+    async encontraEContaRegistros(where = {}, agregadores) {
+        return database[this.nomeDoModelo]
+            .findAndCountAll({ where: { ...where }, ...agregadores })
+    }
 }
 
 module.exports = Services
