@@ -6,7 +6,7 @@ module.exports = {
     try {
       const post = new Post(req.body);
       await post.adiciona();
-      
+
       res.status(201).send(post);
     } catch (erro) {
       if (erro instanceof InvalidArgumentError) {
